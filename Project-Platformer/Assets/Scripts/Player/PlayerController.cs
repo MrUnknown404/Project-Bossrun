@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate () {
 		//Move
-		MoveInput.y = Rb.velocity.y;
+		MoveInput.y = Rb.velocity.y - 1;
 		MoveVelocity = MoveInput;
 		Rb.velocity = MoveVelocity;
 	}
